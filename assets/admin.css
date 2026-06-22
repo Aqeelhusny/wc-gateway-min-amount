@@ -1,0 +1,71 @@
+/* WC Gateway Minimum Amount — Admin Styles */
+
+.wcgma-wrap {
+	max-width: 1100px;
+}
+
+.wcgma-description {
+	color: #646970;
+	margin-bottom: 1.2em;
+}
+
+/* Table column widths */
+.wcgma-table .col-gateway { width: 22%; }
+.wcgma-table .col-id      { width: 14%; }
+.wcgma-table .col-status  { width: 9%; }
+.wcgma-table .col-min     { width: 18%; }
+.wcgma-table .col-notice  { width: auto; }
+
+.wcgma-table th {
+	font-weight: 600;
+}
+
+/* Enabled / Disabled badges */
+.wcgma-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.6;
+}
+
+.wcgma-badge--active {
+	background: #d1fae5;
+	color: #065f46;
+}
+
+.wcgma-badge--inactive {
+	background: #f3f4f6;
+	color: #6b7280;
+}
+
+/* Amount input with currency symbol */
+.wcgma-amount-wrap {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.wcgma-currency {
+	font-weight: 600;
+	color: #3c434a;
+	min-width: 16px;
+}
+
+.wcgma-input-amount {
+	width: 100px !important;
+	text-align: right;
+}
+
+/* Notice input */
+.wcgma-input-notice {
+	width: 100% !important;
+	max-width: 420px;
+}
+
+.wcgma-table .description {
+	font-size: 11px;
+	color: #8c8f94;
+	margin: 4px 0 0;
+}
