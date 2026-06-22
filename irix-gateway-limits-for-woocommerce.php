@@ -133,7 +133,7 @@ final class PGMA_Gateway_Min_Amount {
 							<?php foreach ( $gateways as $id => $gateway ) :
 								$min    = $limits[ $id ]['min']    ?? '';
 								$notice = $limits[ $id ]['notice'] ?? '';
-								$active = ( $gateway->enabled === 'yes' );
+								$active = ( $gateway->get_option( 'enabled' ) === 'yes' );
 							?>
 							<tr>
 								<td class="col-gateway">
