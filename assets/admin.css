@@ -1,7 +1,7 @@
 /* Payment Gateway Minimum Amount — Admin Styles */
 
 .pgma-wrap {
-	max-width: 1100px;
+	max-width: 1400px;
 }
 
 .pgma-description {
@@ -68,4 +68,89 @@
 	font-size: 11px;
 	color: #8c8f94;
 	margin: 4px 0 0;
+}
+
+/* Gateway Discounts & Fees screen */
+.pgma-master-toggle {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	font-weight: 600;
+	font-size: 14px;
+	margin-top: 8px;
+}
+
+.pgma-rule-group {
+	margin: 24px 0;
+}
+
+.pgma-rule-group h3 code {
+	font-weight: 400;
+	margin-left: 6px;
+	color: #646970;
+}
+
+.pgma-section-divider {
+	margin: 32px 0 24px;
+	border: none;
+	border-top: 1px solid #dcdcde;
+}
+
+/*
+ * Table layout is intentionally auto (not "fixed") so columns size to their
+ * content — the number/select inputs below need more room than a percentage
+ * grid gives them at typical admin widths. pgma-table-scroll is the overflow
+ * safety net: on narrow viewports the table scrolls within itself instead of
+ * breaking the page layout.
+ */
+.pgma-table-scroll {
+	overflow-x: auto;
+	margin-bottom: 8px;
+}
+
+.pgma-rule-table {
+	min-width: 980px;
+}
+
+.pgma-rule-table th,
+.pgma-rule-table td {
+	padding: 10px 12px;
+	vertical-align: middle;
+}
+
+.pgma-rule-table .col-active,
+.pgma-rule-table .col-taxable,
+.pgma-rule-table .col-remove {
+	width: 70px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.pgma-rule-table .col-min-cart,
+.pgma-rule-table .col-value,
+.pgma-rule-table .col-cap {
+	width: 140px;
+}
+
+.pgma-rule-table .col-kind,
+.pgma-rule-table .col-type {
+	width: 130px;
+}
+
+.pgma-rule-table .col-kind select,
+.pgma-rule-table .col-type select {
+	width: 100% !important;
+}
+
+.pgma-rule-table .col-label {
+	width: auto;
+	min-width: 220px;
+}
+
+.pgma-rule-table .col-label input[type="text"] {
+	width: 100% !important;
+}
+
+.pgma-add-rule {
+	margin-top: 8px;
 }
